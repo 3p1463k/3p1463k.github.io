@@ -1,5 +1,5 @@
 ---
-title: "Nest thermostat data plot"
+title: "Nest thermostat data plot using shiny dashboard"
 last_modified_at: 2019-03-09T16:20:02-05:00
 categories:
   - Blog
