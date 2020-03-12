@@ -101,4 +101,9 @@ body = dashboardBody(
               )
 ~~~
 
-This code will add
+This code will add 3 boxes in the body where we output the plots, it will look like this: 
+
+[![small image](/assets/images/dashb4.png)](/assets/images/dashb4.png)
+
+
+
