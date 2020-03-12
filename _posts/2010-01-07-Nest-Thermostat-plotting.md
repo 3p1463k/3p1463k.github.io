@@ -45,4 +45,5 @@ server <- function(input, output) { }
 shinyApp(ui, server)
 ~~~
 
-If you dont have R Studio on your PC and you want to try this code, you can sign up for free account at [R Studio Cloud](https://rstudio.cloud/), sign up with Google acct and you set in seconds. Then you can copy the code snippet and run this example.
+If you dont have R Studio on your PC and you want to try this code, you can sign up for free account at
+[R Studio Cloud](https://rstudio.cloud/), sign up with Google acct and you set in seconds. Then you can copy the code snippet and run this example.
