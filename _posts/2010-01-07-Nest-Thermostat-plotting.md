@@ -53,3 +53,24 @@ This code produces just empty dashboard.
 
 Now we start adding things. We add items to the sidebarpanel and then content to main dashboard body.
 In my case i have used [shinydashboardPlus](https://rinterface.github.io/shinydashboardPlus/index.html)
+
+Lets look at the sidebar panel:
+
+~~~r
+ sidebar = dashboardSidebar(
+        
+         sidebarMenu(
+             menuItem("Dashboard", tabName = "dashboard", icon = icon("dashboard")),
+             menuItem("Help", tabName = "help", icon = icon("question"),badgeLabel = "info", badgeColor = "green"),
+             menuItem("Summary", tabName = "summary" , icon = icon("bar-chart-o")),
+             menuItem("Upload",  fileInput("file1", "Choose CSV file"), multiple = FALSE, accept = (".csv"), 
+                      icon = icon("upload"),startExpanded = TRUE),
+             menuItem(selectInput("day","Select day:", choices = NULL), icon = icon("calendar")),
+             menuItem(selectInput("week","Select week:", choices = NULL), icon = icon("calendar")),
+             menuItem(selectInput("month","Select month:", choices = NULL), icon = icon("calendar"))
+             
+             )
+         )
+~~~
+
+You just add things you need in menuItem() and that creates the single item menu
