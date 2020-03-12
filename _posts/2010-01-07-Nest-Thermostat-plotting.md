@@ -126,8 +126,11 @@ Notice that shinydashboard uses the bootstrap and you can use elements from boot
 class = "btn btn-primary btn-lg btn-block"
 ~~~
 
-After thi we are done with ui part of app and we can write the server side code. We first need to load the data,
-we have to check wheter user uploadit some or not, if not we will load our dataset, we do all that in shiny [reactive enviroment](https://shiny.rstudio.com/articles/reactivity-overview.html)
+After this we are done with basics of ui part of application and we can write the server code. 
+
+We first need to load the data, we have to check wheter user uploadit some or not, if not we will load our dataset, 
+
+we do all that in shiny [reactive enviroment](https://shiny.rstudio.com/articles/reactivity-overview.html)
 
 ~~~r
 #load data
