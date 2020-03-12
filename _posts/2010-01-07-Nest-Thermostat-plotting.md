@@ -74,4 +74,7 @@ Lets look at the sidebar panel:
 ~~~
 
 You just add things you need in menuItem() and that creates the single item menu, then you add whatever you need in menuItem(), ie. icon,badge etc... the dashboardSidebar() is within the dashboardPagePlus().
+The code above adds sidebar panel to the empty dashboard :
+
+[![small image](/assets/images/dashb3.png)](/assets/images/dashb3.png)
 
