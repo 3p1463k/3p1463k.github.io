@@ -182,3 +182,13 @@ observeEvent(input$day, {
 
 
 
+We will also need to observe the button to toggle table:
+~~~r
+#Toggle table data
+    
+    observeEvent(input$tog, {
+        
+        toggle("table1")
+        
+    })
+~~~    
