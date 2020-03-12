@@ -114,6 +114,8 @@ fluidRow((column(12, actionButton("tog","Toggle data table", class = "btn btn-pr
 fluidRow(tableOutput('table1'))
 ~~~
 
+[![small image](/assets/images/dashb5.png)](/assets/images/dashb5.png)
+
 
 Notice that shinydashboard uses the bootstrap and you can use elements from bootstrap with their original class.
 ~~~r
