@@ -100,6 +100,8 @@ body = dashboardBody(
                         
                     )
               )
+        )
+  )
 ~~~
 
 This code will add 3 boxes in the body where we output the plots, we pu those inside of fluidRow(), one big box and two small ones on side, it will look like this: 
