@@ -46,7 +46,9 @@ shinyApp(ui, server)
 ~~~
 
 If you dont have R Studio on your PC and you want to try this code, you can sign up for free account at
-[R Studio Cloud](https://rstudio.cloud/), sign up with Google acct and you set in seconds. Then you can copy the code snippet and run this example.
+[R Studio Cloud](https://rstudio.cloud/), sign up with Google acct and you set in seconds. 
+
+Then you can copy the code snippet and run this example.
 This code produces just empty dashboard.
 
 [![small image](/assets/images/dashb2.png)](/assets/images/dashb2.png)
@@ -74,7 +76,29 @@ Lets look at the sidebar panel:
 ~~~
 
 You just add things you need in menuItem() and that creates the single item menu, then you add whatever you need in menuItem(), ie. icon,badge etc... the dashboardSidebar() is within the dashboardPagePlus().
+
 The code above adds sidebar panel to the empty dashboard :
 
 [![small image](/assets/images/dashb3.png)](/assets/images/dashb3.png)
 
+Lets add things to dashboarddBody :
+~~~R
+body = dashboardBody(
+    
+        # Boxes need to be put in a row (or column)
+        tabItems(
+            # First tab content
+            tabItem(tabName = "dashboard",
+                    
+                    fluidRow(
+                        box(plotlyOutput("chart2", height = 650) %>% withSpinner(type = "5"), width = 9),
+                        
+                        box(plotOutput("chart3", height = 300), width = 3),
+                        
+                        box(plotOutput("chart4", height = 300), width = 3)
+                        
+                    )
+              )
+~~~
+
+This code will add
