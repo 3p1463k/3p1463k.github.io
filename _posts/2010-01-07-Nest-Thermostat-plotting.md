@@ -127,10 +127,10 @@ Notice that shinydashboard uses the bootstrap and you can use elements from boot
 class = "btn btn-primary btn-lg btn-block"
 ~~~
 
+
 After this we are done with basics of ui part of application and we can write the server code. 
 
 We first need to load the data, we have to check wheter user uploadit some or not, if not we will load our dataset, 
-
 we do all that in shiny [reactive enviroment](https://shiny.rstudio.com/articles/reactivity-overview.html)
 
 ~~~r
@@ -151,7 +151,8 @@ we do all that in shiny [reactive enviroment](https://shiny.rstudio.com/articles
         }
 ~~~
 
-Ater we have data loaded to process we can now do all aggregations and proccesing we need.
+
+Ater we have data loaded we can now do aggregations and proccesing we need.
 ~~~r
 #process dataframe
     nest <- reactive({
@@ -161,9 +162,10 @@ Ater we have data loaded to process we can now do all aggregations and proccesin
     }
 ~~~
 
+
 Then we need to observe the inputs and update it if it changes:
 ~~~r
-observeEvent(nest(), {
+observeEvent(input$day, {
         day_choices <- nest()$days
         updateSelectInput(session, "day", choices= day_choices)
     })
