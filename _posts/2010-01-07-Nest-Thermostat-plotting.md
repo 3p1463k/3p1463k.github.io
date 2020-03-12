@@ -28,7 +28,7 @@ Main plot in the middle and on the right side, there is two smaller info charts 
 
 The best is, in my opinion to start with simple base and keep adding the features. Here is a base dashboard example:
 
----r
+~~~r
 ## app.R ##
 library(shiny)
 library(shinydashboard)
@@ -42,5 +42,5 @@ ui <- dashboardPage(
 server <- function(input, output) { }
 
 shinyApp(ui, server)
----
+~~~
 
