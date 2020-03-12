@@ -161,5 +161,10 @@ Ater we have data loaded to process we can now do all aggregations and proccesin
     }
 ~~~
 
-
-
+Then we need to observe the inputs and update it if it changes:
+~~~r
+observeEvent(nest(), {
+        day_choices <- nest()$days
+        updateSelectInput(session, "day", choices= day_choices)
+    })
+~~~
