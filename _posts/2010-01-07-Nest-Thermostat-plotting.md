@@ -19,10 +19,28 @@ The application, i will be demonstrating here today is for plotting the data fro
 Here is the [link](https://p1463k.shinyapps.io/nest-plot/) to the base application.
 
 Here is the example of Daily view of data from csv file.
-Main plot in the middle and on the right side, there is two smaller info charts of minimum and maximum temperature and humidity. 
+Main plot in the middle and on the right side, there is two smaller info charts of minimum and maximum temperature and humidity.
+
 [![small image](/assets/images/dashb1.png)](/assets/images/dashb1.png)
 
 
 # Building the app
 
+The best is, in my opinion to start with simple base and keep adding the features. Here is a base dashboard example:
+
+---r
+## app.R ##
+library(shiny)
+library(shinydashboard)
+
+ui <- dashboardPage(
+  dashboardHeader(),
+  dashboardSidebar(),
+  dashboardBody()
+)
+
+server <- function(input, output) { }
+
+shinyApp(ui, server)
+---
 
