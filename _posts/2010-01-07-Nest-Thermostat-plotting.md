@@ -194,9 +194,9 @@ We will also need to observe the button to toggle table:
 ~~~    
 
 # And thats it, 
-the base application is finished, now we just deploy to shinyapps.io, which is really easy if you created app on Rstudio cloud, its going to work same way as it works in your Rstudio cloud project, just press the publish button, connect your shinyapps.io account and publish the app. 
+the base application is finished, now we just deploy to shinyapps.io, which is really easy if you created app on Rstudio cloud, its going to work same way as it works in your Rstudio cloud project, just press the blue publish button, connect your shinyapps.io account and publish the app. 
 
-Now i we can look if we can optimize it and give it final design touch. You can use profvis to see how your app is doing:
+Now we can look if we can optimize it and give it final design touch. You can use profvis to see how your app is doing:
 ~~~r
 library(profvis)
 
