@@ -83,7 +83,7 @@ The code above adds sidebar panel to the empty dashboard :
 
 [![small image](/assets/images/dashb3.png)](/assets/images/dashb3.png)
 
-Lets add things to dashboarddBody(), by creating tabItem() in tabItems() :  
+Lets add things to dashboarddBody(), by creating tabItem() inside of tabItems() :  
 ~~~R
 body = dashboardBody(
     
@@ -123,14 +123,17 @@ fluidRow(tableOutput('table1'))
 
 
 Notice that shinydashboard uses the bootstrap and you can use elements from bootstrap with their original class.
+We are using this long streched button.
+
 ~~~r
 class = "btn btn-primary btn-lg btn-block"
 ~~~
 
 
+
 After this we are done with basics of ui part of application and we can write the server code. 
 
-We first need to load the data, we have to check wheter user uploadit some or not, if not we will load our dataset, 
+First we need to load the data, we have to check wheter user uploaded some or not, if not we will load our dataset, 
 we do all that in shiny [reactive enviroment](https://shiny.rstudio.com/articles/reactivity-overview.html)
 
 ~~~r
@@ -152,7 +155,7 @@ we do all that in shiny [reactive enviroment](https://shiny.rstudio.com/articles
 ~~~
 
 
-Ater we have data loaded we can now do aggregations and proccesing we need.
+Ater we have data loaded, we can now do aggregations and proccesing we need.
 ~~~r
 #process dataframe
     nest <- reactive({
@@ -163,10 +166,19 @@ Ater we have data loaded we can now do aggregations and proccesing we need.
 ~~~
 
 
-Then we need to observe the inputs and update it if it changes:
+We need to observe the inputs and update if input changes:
 ~~~r
 observeEvent(input$day, {
-        day_choices <- nest()$days
-        updateSelectInput(session, "day", choices= day_choices)
-    })
+        
+        day_selected <- input$day
+        
+        nestf <- nest() %>% filter(days==day_selected)
+        
+        output$chart2 <- renderPlotly(ggplot(nestd, aes(x=dates, y=temp))+ geom_line()+
+        ylab("Temperature")+ xlab("Day")+ggtitle("NEST Thermostat")+theme_minimal())
+
+  }
 ~~~
+
+
+
