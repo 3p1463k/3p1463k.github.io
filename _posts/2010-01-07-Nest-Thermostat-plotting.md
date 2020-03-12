@@ -16,4 +16,4 @@ Shiny apps and dasboards are using R language and they are fairly simple to make
 
 The application, i will be demonstrating here today is for plotting the data from the Nest thermostat. The Google provides you the data at Google Takeout, you can just download it from there. However Google doesnt provide any platform where you can see your data, except in the Nest app, which was not satisfying to me, so i decided to make my own plots.
 
-
+Here is the [link](https://p1463k.shinyapps.io/nest-plot/) to the base application.
