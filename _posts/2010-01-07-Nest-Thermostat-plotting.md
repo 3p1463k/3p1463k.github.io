@@ -208,3 +208,8 @@ profvis will generate report, where you can see if anything is slowing down the 
 [![small image](/assets/images/dashb6.png)](/assets/images/dashb6.png)
 
 
+You can also look at youe app side by side with executing code with:
+~~~R
+shiny::runApp("nest",display.mode="showcase")
+~~~
+
