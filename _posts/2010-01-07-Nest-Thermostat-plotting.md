@@ -106,7 +106,7 @@ This code will add 3 boxes in the body where we output the plots, we pu those in
 
 [![small image](/assets/images/dashb4.png)](/assets/images/dashb4.png)
 
-Belloe these boxes we will output the data table and make it toggable :
+Below these boxes we will output the data table and make it toggable with the button :
 
 ~~~r
 fluidRow((column(12, actionButton("tog","Toggle data table", class = "btn btn-primary btn-lg btn-block")))),
@@ -115,6 +115,9 @@ fluidRow(tableOutput('table1'))
 ~~~
 
 Notice that shinydashboard uses the bootstrap and you can use elements from bootstrap with their original class.
+~~~r
+class = "btn btn-primary btn-lg btn-block"
+~~~
 
                     
 
