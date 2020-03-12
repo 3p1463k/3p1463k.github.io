@@ -20,5 +20,6 @@ Here is the [link](https://p1463k.shinyapps.io/nest-plot/) to the base applicati
 
 Here is the example of Daily view of data from csv file.
 
-![App](/assets/images/dashb1.png)
+[![small image](/assets/images/dashb1.png)](/assets/images/dashb1.png)
+
 
