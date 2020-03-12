@@ -82,7 +82,7 @@ The code above adds sidebar panel to the empty dashboard :
 
 [![small image](/assets/images/dashb3.png)](/assets/images/dashb3.png)
 
-Lets add things to dashboarddBody() :
+Lets add things to dashboarddBody(), we create tabItem() in tabItems() :  
 ~~~R
 body = dashboardBody(
     
@@ -113,6 +113,7 @@ fluidRow((column(12, actionButton("tog","Toggle data table", class = "btn btn-pr
 
 fluidRow(tableOutput('table1'))
 ~~~
+
 
 Notice that shinydashboard uses the bootstrap and you can use elements from bootstrap with their original class.
 ~~~r
