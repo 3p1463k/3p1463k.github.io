@@ -50,3 +50,5 @@ If you dont have R Studio on your PC and you want to try this code, you can sign
 This code produces just empty dashboard.
 
 [![small image](/assets/images/dashb2.png)](/assets/images/dashb2.png)
+
+Now we start adding things. We add items to the sidepanel and then content to main dashboard.
