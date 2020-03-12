@@ -29,7 +29,7 @@ It has semi expandable side panel, where you can upload your file and change tim
 
 # Building the app
 
-The best is, in my opinion to start with simple base and keep adding the features. Here is a base dashboard example:
+The best is, in my opinion to start with simple base and keep adding the features and test as you go. Here is a base dashboard example:
 
 ~~~R
 ## app.R ##
