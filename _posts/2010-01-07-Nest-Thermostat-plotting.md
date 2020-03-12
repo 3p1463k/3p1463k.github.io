@@ -51,4 +51,5 @@ This code produces just empty dashboard.
 
 [![small image](/assets/images/dashb2.png)](/assets/images/dashb2.png)
 
-Now we start adding things. We add items to the sidepanel and then content to main dashboard.
+Now we start adding things. We add items to the sidebarpanel and then content to main dashboard body.
+In my case i have used [shinydashboardPlus](https://rinterface.github.io/shinydashboardPlus/index.html)
