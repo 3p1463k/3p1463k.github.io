@@ -82,7 +82,7 @@ The code above adds sidebar panel to the empty dashboard :
 
 [![small image](/assets/images/dashb3.png)](/assets/images/dashb3.png)
 
-Lets add things to dashboarddBody :
+Lets add things to dashboarddBody() :
 ~~~R
 body = dashboardBody(
     
@@ -102,9 +102,19 @@ body = dashboardBody(
               )
 ~~~
 
-This code will add 3 boxes in the body where we output the plots, it will look like this: 
+This code will add 3 boxes in the body where we output the plots, we pu those inside of fluidRow(), one big box and two small ones on side, it will look like this: 
 
 [![small image](/assets/images/dashb4.png)](/assets/images/dashb4.png)
 
+Belloe these boxes we will output the data table and make it toggable :
 
+~~~r
+fluidRow((column(12, actionButton("tog","Toggle data table", class = "btn btn-primary btn-lg btn-block")))),
+
+fluidRow(tableOutput('table1'))
+~~~
+
+Notice that shinydashboard uses the bootstrap and you can use elements from bootstrap with their original class.
+
+                    
 
