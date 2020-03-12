@@ -73,4 +73,4 @@ Lets look at the sidebar panel:
          )
 ~~~
 
-You just add things you need in menuItem() and that creates the single item menu
+You just add things you need in menuItem() and that creates the single item menu, the dashboardSidebar() is within the dashboardPagePlus().
