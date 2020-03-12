@@ -83,7 +83,7 @@ The code above adds sidebar panel to the empty dashboard :
 
 [![small image](/assets/images/dashb3.png)](/assets/images/dashb3.png)
 
-Lets add things to dashboarddBody(), we create tabItem() in tabItems() :  
+Lets add things to dashboarddBody(), by creating tabItem() in tabItems() :  
 ~~~R
 body = dashboardBody(
     
@@ -105,11 +105,11 @@ body = dashboardBody(
   )
 ~~~
 
-This code will add 3 boxes in the body where we output the plots, we pu those inside of fluidRow(), one big box and two small ones on side, it will look like this: 
+This code will add 3 boxes in the body where we output the plots, we put those inside fluidRow(), one big box and two small ones on side, Then for each menuItem(), we create its own tabItem(), it will look like this: 
 
 [![small image](/assets/images/dashb4.png)](/assets/images/dashb4.png)
 
-Then for each menuItem(), we create its own tabItem().
+
 
 Below these boxes we will output the data table and make it toggable with the button :
 
@@ -152,5 +152,14 @@ we do all that in shiny [reactive enviroment](https://shiny.rstudio.com/articles
 ~~~
 
 Ater we have data loaded to process we can now do all aggregations and proccesing we need.
+~~~r
+#process dataframe
+    nest <- reactive({
+        nst() %>% mutate(dates= as.POSIXct(paste(nst()$Date,Time)), days= nst()$Date) %>% 
+        select(dates,avg.temp., days, avg.humidity.) %>%
+        rename(temp=avg.temp., humidity=avg.humidity.)
+    }
+~~~
+
 
 
