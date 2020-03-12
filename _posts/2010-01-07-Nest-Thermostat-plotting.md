@@ -55,7 +55,7 @@ This code produces just empty dashboard.
 
 [![small image](/assets/images/dashb2.png)](/assets/images/dashb2.png)
 
-Now we start adding things. We add items to the sidebarpanel and then content to main dashboard body.
+Now we start adding things. We add items to the sidebarpanel and then content to the main dashboard body.
 In my case i have used [shinydashboardPlus](https://rinterface.github.io/shinydashboardPlus/index.html)
 
 Lets look at the sidebar panel:
@@ -159,7 +159,7 @@ Ater we have data loaded, we can now do aggregations and proccesing we need.
 ~~~r
 #process dataframe
     nest <- reactive({
-        nst() %>% mutate(dates= as.POSIXct(paste(nst()$Date,Time)), days= nst()$Date) %>% 
+        df() %>% mutate(dates= as.POSIXct(paste(nst()$Date,Time)), days= nst()$Date) %>% 
         select(dates,avg.temp., days, avg.humidity.) %>%
         rename(temp=avg.temp., humidity=avg.humidity.)
     }
