@@ -108,6 +108,8 @@ This code will add 3 boxes in the body where we output the plots, we pu those in
 
 [![small image](/assets/images/dashb4.png)](/assets/images/dashb4.png)
 
+Then for each menuItem(), we create its own tabItem().
+
 Below these boxes we will output the data table and make it toggable with the button :
 
 ~~~r
@@ -124,5 +126,27 @@ Notice that shinydashboard uses the bootstrap and you can use elements from boot
 class = "btn btn-primary btn-lg btn-block"
 ~~~
 
-                    
+After thi we are done with ui part of app and we can write the server side code. We first need to load the data,
+we have to check wheter user uploadit some or not, if not we will load our dataset, we do all that in shiny [reactive enviroment](https://shiny.rstudio.com/articles/reactivity-overview.html)
+
+~~~r
+#load data
+
+    df <- reactive({
+        
+        inFile <- input$file1
+        
+        if (is.null(input$file1)) {
+            
+        inFile <- read.csv("2020-01-sensors.csv",  stringsAsFactors=FALSE)
+        
+        }
+                       
+        else{
+            read.csv(inFile$datapath, stringsAsFactors=FALSE)
+        }
+~~~
+
+
+
 
