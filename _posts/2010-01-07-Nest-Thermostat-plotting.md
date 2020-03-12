@@ -213,3 +213,4 @@ You can also look at youe app side by side with executing code with:
 shiny::runApp("nest",display.mode="showcase")
 ~~~
 
+[![small image](/assets/images/dashb8.png)](/assets/images/dashb8.png)
