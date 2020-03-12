@@ -193,12 +193,18 @@ We will also need to observe the button to toggle table:
     })
 ~~~    
 
-And thats it, the base application is finished, now we just deploy to shinyapps.io, which is really easy if you created app on Rstudio cloud, its going to work as it works in your cloud project, just go to deploy, connect your shinyapps.io accaount
-and publish the app. Now i will just try to optimize it and give it final design touch. You can use profviz to see how your app is doing:
+#And thats it, 
+the base application is finished, now we just deploy to shinyapps.io, which is really easy if you created app on Rstudio cloud, its going to work as it works in your cloud project, just go to deploy, connect your shinyapps.io accaount
+and publish the app. Now i will just try to optimize it and give it final design touch. You can use profvis to see how your app is doing:
 ~~~r
 library(profvis)
 
 profvis(runApp("nest"))
 ~~~
+
+
+profvis will generate report, where you can see if anything is slowing down the things which you could possibly optimize
+
+[![small image](/assets/images/dashb6.png)](/assets/images/dashb6.png)
 
 
