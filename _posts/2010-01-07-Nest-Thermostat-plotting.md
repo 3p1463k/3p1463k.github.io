@@ -18,5 +18,7 @@ The application, i will be demonstrating here today is for plotting the data fro
 
 Here is the [link](https://p1463k.shinyapps.io/nest-plot/) to the base application.
 
+Here is the example of Daily view of data from csv file.
+
 ![App](/assets/images/dashb1.png)
 
