@@ -174,7 +174,7 @@ observeEvent(input$day, {
         
         nestf <- nest() %>% filter(days==day_selected)
         
-        output$chart2 <- renderPlotly(ggplot(nestd, aes(x=dates, y=temp))+ geom_line()+
+        output$chart2 <- renderPlotly(ggplot(nestf, aes(x=dates, y=temp))+ geom_line()+
         ylab("Temperature")+ xlab("Day")+ggtitle("NEST Thermostat")+theme_minimal())
 
   }
@@ -192,3 +192,13 @@ We will also need to observe the button to toggle table:
         
     })
 ~~~    
+
+And thats it, the base application is finished, now we just deploy to shinyapps.io, which is really easy if you created app on Rstudio cloud, its going to work as it works in your cloud project, just go to deploy, connect your shinyapps.io accaount
+and publish the app. Now i will just try to optimize it and give it final design touch. You can use profviz to see how your app is doing:
+~~~r
+library(profvis)
+
+profvis(runApp("nest"))
+~~~
+
+
