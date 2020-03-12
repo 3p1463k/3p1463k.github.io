@@ -23,12 +23,13 @@ Main plot in the middle and on the right side, there is two smaller info charts 
 
 [![small image](/assets/images/dashb1.png)](/assets/images/dashb1.png)
 
+It has semi expandable side panel, where you can upload your file and change time periods between daily,weekly and monthly.
 
 # Building the app
 
 The best is, in my opinion to start with simple base and keep adding the features. Here is a base dashboard example:
 
-~~~r
+~~~R
 ## app.R ##
 library(shiny)
 library(shinydashboard)
