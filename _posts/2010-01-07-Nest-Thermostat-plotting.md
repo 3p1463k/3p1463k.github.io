@@ -18,5 +18,5 @@ The application, i will be demonstrating here today is for plotting the data fro
 
 Here is the [link](https://p1463k.shinyapps.io/nest-plot/) to the base application.
 
-![App]("/assets/images/dashb1.png")
+![App]("/minimal-mistakes/assets/images/dashb1.png")
 
