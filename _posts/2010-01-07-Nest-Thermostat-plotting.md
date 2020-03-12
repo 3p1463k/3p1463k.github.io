@@ -13,6 +13,7 @@ tags:
 This article is to demonstrate the process of making a simple shiny dashboard and plotting the data from csv file.
 
 At the end of of the article i will also describe how to deploy the application on shinyapps.io.
+
 Shiny apps and dasboards are using R language and they are fairly simple to make after you tackle the basis and understand the structure.
 
 The application, i will be demonstrating here today is for plotting the data from the Nest thermostat. The Google provides you the data at Google Takeout, you can just download it from there (instructions how to do it are in the help section of the application). However the Google doesnt provide any platform where you can see your data on chart, except in the Nest app, where things are really small and you cant see much of the detail and that didnt satisfy me, you could probably feed it to Google Data Studio but i decided to take different step and make my own plots using R language.
@@ -150,6 +151,6 @@ we do all that in shiny [reactive enviroment](https://shiny.rstudio.com/articles
         }
 ~~~
 
-
+Ater we have data loaded to process we can now do all aggregations and proccesing we need.
 
 
