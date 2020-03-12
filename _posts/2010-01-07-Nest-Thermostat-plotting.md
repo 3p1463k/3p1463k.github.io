@@ -216,4 +216,4 @@ shiny::runApp("nest",display.mode="showcase")
 
 [![small image](/assets/images/dashb8.png)](/assets/images/dashb8.png)
 
-You can look at the app at [](https://p1463k.shinyapps.io/nest-plot/) 
+You can look at the app at [https://p1463k.shinyapps.io/nest-plot/](https://p1463k.shinyapps.io/nest-plot/) 
