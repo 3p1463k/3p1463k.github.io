@@ -111,3 +111,10 @@ if __name__ == '__main__':
     app.run_server(debug=True)
     
 ~~~    
+
+
+
+
+
+Check the app out at [https://plotval.herokuapp.com/](https://plotval.herokuapp.com/)
+
