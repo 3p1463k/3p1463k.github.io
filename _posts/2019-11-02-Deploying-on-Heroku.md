@@ -44,4 +44,24 @@ df1["Date"] = df1["Date"].dt.date
 ~~~
 
 
+Then we start with app code and app layout:
+~~~python
+app = dash.Dash(__name__)
+server = app.server
 
+app.layout = html.Div([
+    html.H1('Annotation Ratio'
+    ),
+
+    dcc.Markdown("EP Data Stacks"
+    ),
+
+    dcc.Dropdown(
+        id='annotator-dropdown',
+        options=[{'label': i, 'value': i} for i in dfdates.sort_values(by="Name")["Name"].unique()],
+        multi=True,
+        value=dfdates.sort_values(by="Name")["Name"].unique()[0:4].tolist()
+    ),
+
+    dcc.Graph(id='timeseries-graph')
+~~~
