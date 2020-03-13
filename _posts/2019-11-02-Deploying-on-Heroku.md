@@ -65,3 +65,11 @@ app.layout = html.Div([
 
     dcc.Graph(id='timeseries-graph')
 ~~~
+
+
+After that we define dependencies:
+~~~python
+@app.callback(
+    dash.dependencies.Output('timeseries-graph', 'figure'),
+    [dash.dependencies.Input('annotator-dropdown', 'value')])
+~~~
