@@ -155,6 +155,7 @@ $ heroku ps:scale web=1
 $ heroku open
 ~~~
 
+
 # And thats it, app is running on Heroku
 
 
