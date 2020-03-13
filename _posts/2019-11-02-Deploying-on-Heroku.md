@@ -26,9 +26,22 @@ from textwrap import dedent
 
 ~~~
 
-Inside the apps folder we create folder named data and put our dataset in there. We will read our data:
+Inside the apps folder we create folder named data and put our dataset in there. We will read our data in to Pandas:
 ~~~python
 df = pd.read_excel("data/Efektivity.xlsx")
 ~~~
+
+
+Then we do all processing we need:
+~~~Python
+df = df[df["status"] == "Annotatable"]
+#Select, rename columns, convert values
+df1 = df1.iloc[:, [0,2,3,12,13,32,33,34]]
+df1.columns = ["File", "Name", "Date", "Obj", "Frames", "AR", "Dyn1", "AR RB" ]
+df1.loc[:,'Dyn1'] = pd.to_numeric(df1["Dyn1"])
+df1.loc[:,"Date"] = pd.to_datetime(df1["Date"])
+df1["Date"] = df1["Date"].dt.date
+~~~
+
 
 
