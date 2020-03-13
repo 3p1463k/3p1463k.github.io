@@ -147,6 +147,14 @@ Commit and push files to Heroku server:
 ~~~bash
 $ git commit -m "first commit prototype app"
 $ git push heroku master
+~~~
+
+Fire up one instance and open the app:
+~~~bash
+$ heroku ps:scale web=1
+$ heroku open
+~~~
+
 
 
 
