@@ -126,7 +126,10 @@ $ git add .
 ~~~
 
 
-
+Commit and push files to Heroku server:
+~~~bash
+$ git commit -m "first commit prototype app"
+$ git push heroku master
 
 
 
