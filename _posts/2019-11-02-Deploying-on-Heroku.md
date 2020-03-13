@@ -105,4 +105,9 @@ def update_graph(name_values):
     }
 ~~~
 
-
+At the end we start the application:
+~~~python
+if __name__ == '__main__':
+    app.run_server(debug=True)
+    
+~~~    
