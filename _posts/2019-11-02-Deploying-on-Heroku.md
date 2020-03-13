@@ -111,8 +111,8 @@ if __name__ == '__main__':
     app.run_server(debug=True)
     
 ~~~    
-
-OK this was just a quick description of the application, now we move on to deploy. Open up a terminal and go to apps folder.
+# Deploy
+OK that was just a quick description of the application, now we move on to deploy. Open up a terminal and go to apps folder.
 From there you initialize the git
 ~~~bash
 git init
