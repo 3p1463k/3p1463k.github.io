@@ -23,3 +23,10 @@ import plotly.graph_objs as go
 from textwrap import dedent
 
 ~~~
+
+Inside the apps folder we create folder named data and put our dataset in there. We will read our data:
+~~~python
+df = pd.read_excel("data/Efektivity.xlsx")
+~~~
+
+
