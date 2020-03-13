@@ -6,11 +6,10 @@ categories:
   - Blog
 tags:
   - Post Formats
-  - readability
   - standard
 ---
 
-This article is to demonstrate the process of making a simple shiny dashboard and plotting the data from csv file.
+This article will demonstrate the process of making a simple shiny dashboard and plotting the data from csv file.
 
 At the end of of the article i will also describe how to deploy the application on shinyapps.io.
 
