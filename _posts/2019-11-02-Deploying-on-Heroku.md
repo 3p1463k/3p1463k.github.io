@@ -112,7 +112,24 @@ if __name__ == '__main__':
     
 ~~~    
 # Deploy
-OK that was just a quick description of the application, now we move on to deploy. Open up a terminal and go to the apps folder.Login to heroku an create the app
+OK that was just a quick description of the application, now we move on to deploy. You need to make a Procfile, where you set the server, here is what worked for me running gunicorn server, you need to define port as variable otherwise it wont work:
+~~~bash
+web gunicorn plotval:server -b :$PORT
+~~~
+
+
+Then fill your requirements.txt, where you  put your imports:
+~~~bash
+pandas
+numpy
+dash
+dash_html_components
+dash_core_components
+xlrd
+gunicorn
+~~~
+
+Then we start deploying. Open up a terminal and go to the apps folder. Login to heroku an create the app
 ~~~bash
 $ heroku login
 $ heroku create
