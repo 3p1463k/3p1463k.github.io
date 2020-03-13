@@ -13,4 +13,7 @@ This one is from 2000-2018:
 
 [![small image](/assets/images/gdp/meansalary2000-18.png)](/assets/images/gdp/meansalary2000-18.png)
 
+Here is GDP 1993-2018:
+[![small image](/assets/images/gdp/gdpcz93-18.png)](/assets/images/gdp/gdpcz93-18.png)
+
 
