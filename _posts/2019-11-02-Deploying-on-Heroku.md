@@ -112,16 +112,20 @@ if __name__ == '__main__':
     
 ~~~    
 # Deploy
-OK that was just a quick description of the application, now we move on to deploy. Open up a terminal and go to apps folder.
-From there you initialize the git
+OK that was just a quick description of the application, now we move on to deploy. Open up a terminal and go to the apps folder.Login to heroku an create the app
 ~~~bash
-git init
+$ heroku login
+$ heroku create
 ~~~
 
-Now add the files to git with 
+
+Then initialize the git and add files to it
 ~~~bash
-git add .
+$ git init
+$ git add .
 ~~~
+
+
 
 
 
