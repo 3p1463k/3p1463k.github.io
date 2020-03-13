@@ -9,6 +9,8 @@ They have a tutorial how to deploy apps but not everything is crystal clear. Her
 
 
 Here is an image of the app, it measures a ratio of annotators and displays the value on chart, where you can compare as many workers as you want.
+
+
 [![small image](/assets/images/heroku/her1.png)](/assets/images/heroku/her1.png)
 
 
