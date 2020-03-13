@@ -44,7 +44,7 @@ df1["Date"] = df1["Date"].dt.date
 ~~~
 
 
-Then we start with app code and app layout:
+Then we start with app code and layout:
 ~~~python
 app = dash.Dash(__name__)
 server = app.server
@@ -73,3 +73,36 @@ After that we define dependencies:
     dash.dependencies.Output('timeseries-graph', 'figure'),
     [dash.dependencies.Input('annotator-dropdown', 'value')])
 ~~~
+
+All we have left is to define function to update chart and define actuall plot:
+~~~python
+def update_graph(name_values):
+
+    df2 = dfdates.loc[dfdates['Name'].isin(name_values)]
+
+    return {
+        'data': [go.Scatter(
+            x=df2[df2['Name'] == name]['Date'],
+            y= df2[df2["Name"]== name]['AR'],
+            
+            mode='lines+markers',
+            name=name,
+            marker={
+                'size': 10,
+                'opacity': 0.5,
+                'line': {'width': 0.5, 'color': 'white'}
+            }
+        ) for name in df2.Name.unique()],
+        'layout': go.Layout(
+            title="Annotation Ratio by date",
+            xaxis={'title': 'Day'},
+            yaxis={'title': 'Annotatio Ratio'},
+            margin={'l': 60, 'b': 50, 't': 80, 'r': 0},
+            hovermode='closest'
+            # paper_bgcolor='rgba(0,0,0,0)',
+            # plot_bgcolor='rgba(0,0,0,0)'
+        )
+    }
+~~~
+
+
