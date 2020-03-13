@@ -9,4 +9,6 @@ Here are charts of mean salary and GDp in Czech Republic. Data is from Czech sta
 [![small image](/assets/images/gdp/meansalary93-18.png)](/assets/images/gdp/meansalary93-18.png)
 
 
+This one is from 2000-2018:
+
 [![small image](/assets/images/gdp/meansalary2000-18.png)](/assets/images/gdp/meansalary2000-18.png)
