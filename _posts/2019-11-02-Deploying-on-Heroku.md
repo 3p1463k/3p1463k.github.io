@@ -33,7 +33,7 @@ df = pd.read_excel("data/Efektivity.xlsx")
 
 
 Then we do all processing we need:
-~~~Python
+~~~python
 df = df[df["status"] == "Annotatable"]
 #Select, rename columns, convert values
 df1 = df1.iloc[:, [0,2,3,12,13,32,33,34]]
