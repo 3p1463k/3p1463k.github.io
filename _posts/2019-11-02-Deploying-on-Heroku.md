@@ -1,5 +1,7 @@
 ---
 title: "Deploying Python Dash app on Heroku with gunicorn"
+header:
+  teaser: /assets/images/her/her1-thumb.png
 classes: wide
 last_modified_at: 2019-06-02T16:20:02-05:00
 ---
