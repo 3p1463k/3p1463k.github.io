@@ -26,10 +26,13 @@ from textwrap import dedent
 
 ~~~
 
+
+
 Inside the apps folder we create folder named data and put our dataset in there. We will read our data in to Pandas:
 ~~~python
 df = pd.read_excel("data/Efektivity.xlsx")
 ~~~
+
 
 
 Then we do all processing we need:
@@ -42,6 +45,7 @@ df1.loc[:,'Dyn1'] = pd.to_numeric(df1["Dyn1"])
 df1.loc[:,"Date"] = pd.to_datetime(df1["Date"])
 df1["Date"] = df1["Date"].dt.date
 ~~~
+
 
 
 Then we start with app code and layout:
@@ -67,12 +71,15 @@ app.layout = html.Div([
 ~~~
 
 
+
 After that we define dependencies:
 ~~~python
 @app.callback(
     dash.dependencies.Output('timeseries-graph', 'figure'),
     [dash.dependencies.Input('annotator-dropdown', 'value')])
 ~~~
+
+
 
 All we have left is to define function to update chart and define actuall plot:
 ~~~python
