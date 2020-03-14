@@ -1,7 +1,7 @@
 ---
 title: "EDx UC Berkeley Professional datascience certificate"
 header:
-  teaser: /assets/images/dashb/cert/cert1.png
+  teaser: /assets/images/cert/cert1.png
 classes: wide
 last_modified_at: 2019-08-05T16:20:02-05:00
 ---
