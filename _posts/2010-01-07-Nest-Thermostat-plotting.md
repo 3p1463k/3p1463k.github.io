@@ -19,7 +19,7 @@ The application, i will be demonstrating here today is for plotting the data fro
 Here is the example of Daily view of data from csv file.
 Main plot in the middle and on the right side, there is two smaller info charts of minimum and maximum temperature and humidity.
 
-[![small image](/assets/images/dashb1.png)](/assets/images/dashb1.png)
+[![small image](/assets/images/dashb/dashb1.png)](/assets/images/dashb/dashb1.png)
 
 It has semi expandable side panel, where you can upload your file and change time periods between daily,weekly and monthly.
 
