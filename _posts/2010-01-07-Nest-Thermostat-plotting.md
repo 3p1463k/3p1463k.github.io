@@ -1,6 +1,7 @@
 ---
 title: "Nest thermostat data plot using shiny dashboard"
 image:
+  feature: dashb2.png
   thumb: dashb1-thumb.png
 header:
   teaser: /assets/images/dashb/dashb1.png
