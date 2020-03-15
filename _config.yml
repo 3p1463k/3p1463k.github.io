@@ -48,7 +48,8 @@ plugins:
 author:
   name   : "Evzen Ptacek"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Import Pandas as pd, import numpy as np"
+  bio    : "import Pandas as pd
+            import numpy as np"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
