@@ -6,7 +6,7 @@ image:
   feature: /assets/images/sigm/sigm1.png
   thumb: /assets/images/sigm/sigm2.png
 header:
-  teaser: /assets/images/sigm1/sigm1.png
+  teaser: /assets/images/sigm/sigm1.png
 classes: wide
 last_modified_at: 2019-03-09T16:20:02-05:00
 ---
