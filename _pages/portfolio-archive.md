@@ -4,7 +4,7 @@ layout: collection
 permalink: /
 collection: posts
 classes: wide
-entries_layout: grid
+entries_layout: list
 ---
 
 
