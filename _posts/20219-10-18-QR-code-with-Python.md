@@ -8,6 +8,8 @@ image:
 header:
   teaser: /assets/images/qr/qr1.png
 classes: wide
+
+last_modified_at: 2019-03-05T16:20:02-05:00
 ---
 
 Its very simple to generate qr code with python, just install qrcode:
