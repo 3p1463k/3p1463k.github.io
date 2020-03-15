@@ -1,5 +1,5 @@
 ---
-title: "Neural network percepton "
+title: "Neural network  perceptron "
 categories:
   - blog
 image:
