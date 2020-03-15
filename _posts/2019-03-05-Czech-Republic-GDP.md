@@ -1,5 +1,7 @@
 ---
 title: "Czech Republic Mean salary and GDP using R and ggplot"
+categories:
+  Blog
 header:
   teaser: /assets/images/gdp/gdpcz93-18.png
 classes: wide
