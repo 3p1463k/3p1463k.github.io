@@ -48,7 +48,7 @@ plugins:
 author:
   name   : "Evzen Ptacek"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "\"Any sufficiently advanced technology is indistinguishable from magic.\"<br> - Arthur C. Clarke"
+  bio    : "\import pandas as pd\"<br> import numpy as np"
 
   links:
     - label: "Website"
