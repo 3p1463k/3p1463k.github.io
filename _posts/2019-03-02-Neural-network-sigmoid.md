@@ -13,4 +13,4 @@ last_modified_at: 2019-03-09T16:20:02-05:00
 
 # Neural networks activation function
 
-[![small image](/assets/images/dashb/dashb1.png)](/assets/images/dashb/dashb1.png)
+[![small image](/assets/images/sigm1/sigm1.png)](/assets/images/sigm1/sigm1.png)
