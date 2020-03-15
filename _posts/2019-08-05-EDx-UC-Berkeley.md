@@ -1,5 +1,7 @@
 ---
 title: "EDx UC Berkeley Professional datascience certificate"
+categories:
+  - blog
 header:
   teaser: /assets/images/cert/cert1.png
 classes: wide
