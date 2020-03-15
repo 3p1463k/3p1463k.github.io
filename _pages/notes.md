@@ -1,0 +1,4 @@
+---
+permalink: /notes/
+title: "Notes"
+---
