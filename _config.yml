@@ -49,7 +49,7 @@ author:
   name   : "Evzen Ptacek"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "import pandas as pd<br> import numpy as np"
-
+  location : "Prague"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
