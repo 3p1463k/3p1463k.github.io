@@ -1,7 +1,7 @@
 ---
 title: "Notes"
 layout: collection
-permalink: /notes/
+permalink: /categories/
 collection: notes
 classes: wide
 entries_layout: grid
