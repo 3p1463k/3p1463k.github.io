@@ -86,4 +86,5 @@ defaults:
 collections:
   - notes
   
-      
+notes:
+  path: /notes/      
