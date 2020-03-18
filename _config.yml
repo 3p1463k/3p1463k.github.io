@@ -86,4 +86,4 @@ defaults:
 collections:
   - notes:
       output: true
-      permalink: /notes/
+      
