@@ -1,7 +1,7 @@
 ---
 title: "Neural network  perceptron "
 categories:
-  - blog
+  - notes
 image:
   feature: /assets/images/sigm/sigm1.png
   thumb: /assets/images/sigm/sigm2.png
