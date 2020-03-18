@@ -85,5 +85,5 @@ defaults:
       author_profile: true
 collections:
   - notes:
-      output: true
+  
       
