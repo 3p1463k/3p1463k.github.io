@@ -1,6 +1,6 @@
 ---
 title: "Notes"
-layout: notes
+layout: collection
 permalink: /notes/
 collection: notes
 classes: wide
