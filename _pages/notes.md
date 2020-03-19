@@ -1,6 +1,6 @@
 ---
 title: "Notes"
-layout: posts
+layout: notes
 permalink: /notes/
 collection: notes
 classes: wide
