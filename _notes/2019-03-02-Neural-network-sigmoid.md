@@ -1,5 +1,8 @@
 ---
 title: "Neural network sigmoid "
+tags:
+  notes
+layout: single  
 categories:
   - blog
 image:
