@@ -1,5 +1,6 @@
 ---
 title: "QR code with Python"
+url" "/notes/QR-code-with-Python/"
 categories:
   - blog
 image:
