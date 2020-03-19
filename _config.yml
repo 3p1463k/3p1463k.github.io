@@ -48,7 +48,7 @@ plugins:
 author:
   name   : "Evzen Ptacek"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "import pandas as pd<br> from future import peace"
+  bio    : "from future import peace"
   location : "Prague"
   links:
     - label: "Website"
@@ -83,8 +83,4 @@ defaults:
     values:
       layout: single
       author_profile: true
-collections:
-  - notes
-  
-notes:
-  path: /notes/      
+
