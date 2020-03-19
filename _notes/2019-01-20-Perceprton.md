@@ -1,5 +1,6 @@
 ---
 title: "Neural network  perceptron "
+url: "/notes/Perceprton.md/"
 tags:
   notes
 layout: single  
