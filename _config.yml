@@ -84,5 +84,10 @@ defaults:
       layout: single
       author_profile: true
 
+# collections:
+#   - notes
+# Collections
 collections:
-  - notes
+  notes:
+    output: true
+    permalink: /:collection/:path/
