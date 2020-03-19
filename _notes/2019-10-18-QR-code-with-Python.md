@@ -18,6 +18,12 @@ Its very simple to generate qr code with python, just install qrcode:
 pip install qrcode[pil]
 ~~~
 
+~~~jupyter
+import qrcode
+img = qrcode.make("Some data")
+~~~
+
+
 The you can fire up Jupyter notebook:
 
 [![small image](/assets/images/qr/qr1.png)](/assets/images/qr/qr1.png)
