@@ -1,7 +1,7 @@
 ---
 title: "Neural network  perceptron "
-categories:
-  - notes
+tags:
+  notes
 layout: single  
 image:
   feature: /assets/images/sigm/sigm1.png
