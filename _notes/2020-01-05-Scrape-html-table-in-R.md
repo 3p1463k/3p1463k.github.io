@@ -1,6 +1,6 @@
 ---
 title: "Scrape html table in R"
-url: "/notes//"
+url: "/notes/"
 tags:
   notes
 layout: single  
