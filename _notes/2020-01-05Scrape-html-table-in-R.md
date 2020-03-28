@@ -1,6 +1,6 @@
 ---
-title: "Ggplot US Gun Murders"
-url: "/notes/Perceprton.md/"
+title: "Scrape html table in R"
+url: "/notes//"
 tags:
   notes
 layout: single  
