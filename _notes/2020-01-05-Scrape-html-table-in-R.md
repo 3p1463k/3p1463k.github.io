@@ -5,8 +5,8 @@ tags:
   notes
 layout: single  
 image:
-  feature: /assets/images/notes//io1.png
-  thumb: /assets/images/notes/io1.png
+  feature: /assets/images/notes//io2.jpg
+  thumb: /assets/images/notes/io2.jpg
 header:
   teaser: /assets/images/notes/io1.png
 classes: wide
