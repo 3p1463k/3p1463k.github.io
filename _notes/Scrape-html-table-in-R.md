@@ -1,0 +1,25 @@
+---
+title: "Ggplot US Gun Murders"
+url: "/notes/Perceprton.md/"
+tags:
+  notes
+layout: single  
+image:
+  feature: /assets/images/gg/gg1.png
+  thumb: /assets/images/gg/gg1.png
+header:
+  teaser: /assets/images/gg/gg1.png
+classes: wide
+last_modified_at: 2019-04-10T16:20:02-05:00
+---
+
+```r
+webpage <- read_html("https://en.wikipedia.org/wiki/COVID-19_testing")
+
+tbls_ls <- webpage %>%
+  html_nodes("table") %>%
+  .[2] %>%
+  html_table(fill = TRUE)
+df <- as.data.frame(tbls_ls)
+
+```
