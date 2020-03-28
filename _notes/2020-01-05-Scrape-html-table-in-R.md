@@ -5,10 +5,10 @@ tags:
   notes
 layout: single  
 image:
-  feature: /assets/images/gg/gg1.png
-  thumb: /assets/images/gg/gg1.png
+  feature: /assets/images/notes//io1.png
+  thumb: /assets/images/notes/io1.png
 header:
-  teaser: /assets/images/gg/gg1.png
+  teaser: /assets/images/notes/io1.png
 classes: wide
 last_modified_at: 2019-04-10T16:20:02-05:00
 ---
