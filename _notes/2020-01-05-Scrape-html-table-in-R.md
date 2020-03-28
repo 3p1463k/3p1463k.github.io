@@ -8,7 +8,7 @@ image:
   feature: /assets/images/notes//io2.jpg
   thumb: /assets/images/notes/io2.jpg
 header:
-  teaser: /assets/images/notes/io1.png
+  teaser: /assets/images/notes/io2.jpg
 classes: wide
 last_modified_at: 2019-04-10T16:20:02-05:00
 ---
