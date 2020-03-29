@@ -15,17 +15,28 @@ last_modified_at: 2019-04-10T16:20:02-05:00
 
 [![small image](/assets/images/notes/io1.png)](/assets/images/notes/io1.png)
 
+First get the tables :
 
 ```r
-library(httr)
 library(rvest)
 
 webpage <- read_html("https://en.wikipedia.org/wiki/COVID-19_testing")
 
+tbls <- html_nodes(webpage, "table")
+
+tbls
+```
+
+
+Then see which table you need and convert it to dataframe
+
+
+```r
 tbls_ls <- webpage %>%
   html_nodes("table") %>%
   .[2] %>%
   html_table(fill = TRUE)
+  
 df <- as.data.frame(tbls_ls)
 
 ```
