@@ -1,5 +1,5 @@
 ---
-title: "Neural network  perceptron "
+title: "Replace-character-in-R-dataset"
 url: "/notes/"
 tags:
   notes
@@ -13,10 +13,20 @@ classes: wide
 last_modified_at: 2019-03-09T16:20:02-05:00
 ---
 
+Lets assume we have folowing dataset
+
+Name          Date
+somefoo       1
+anotherfoo    2
+
 
 ```r
-df1$Name <-  as.numeric(str_replace_all(df1$Tests , 'foo', 'bar'))
+df <-  as.numeric(str_replace_all(df1$Name , 'foo', 'bar'))
 ```
+
+Name          Date
+somebar       1
+anotherfoo    2
 
 
 
