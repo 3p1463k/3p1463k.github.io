@@ -15,7 +15,7 @@ last_modified_at: 2019-04-10T16:20:02-05:00
 
 [![small image](/assets/images/notes/io1.png)](/assets/images/notes/io1.png)
 
-First get the tables :
+First get all the tables on the web page:
 
 ```r
 library(rvest)
