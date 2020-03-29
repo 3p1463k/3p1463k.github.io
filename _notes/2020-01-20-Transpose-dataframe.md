@@ -5,10 +5,10 @@ url: "/notes/Transpose-dataframe.md/"
 categories:
   - blog
 image:
-  feature: /assets/images/qr/qr2.png
-  thumb: /assets/images/qr/qr2.png
+  feature: /assets/images/notes/io5.png
+  thumb: /assets/images/notes/io5.png
 header:
-  teaser: /assets/images/qr/qr1.png
+  teaser: /assets/images/notes/io5.png
 classes: wide
 last_modified_at: 2019-03-05T16:20:02-05:00
 ---
